@@ -1,4 +1,4 @@
-# d435i_depth
+# ROS2 d435i depth camera with Ignition Gazebo
 URDF package for intel realsense d435i depth camera with gazebo plugin installation instructions
 ![image](https://github.com/user-attachments/assets/86911cac-7df3-476e-be01-a371d55ac442)
 
