@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<robot name="gz_d435i" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find d435i_depth)/urdf/test_d435i.urdf.xacro"/>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
    <!-- Realsense D435i -->
   <gazebo reference="camera_color_frame">
     <sensor name="color" type="camera">

@@ -31,5 +31,7 @@ aluminum peripherial evaluation case.
     </xacro:sensor_d435>
     <xacro:d435i_imu_modules name="${name}" use_nominal_extrinsics="${use_nominal_extrinsics}"/>
   </xacro:macro>
+
+  <xacro:include filename="$(find d435i_depth)/urdf/d435i.gazebo.xacro"/>
 </robot>
 
