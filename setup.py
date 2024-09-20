@@ -15,9 +15,7 @@ setup(
         # Include launch files
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
         # Include model files
-        (os.path.join('share', package_name, 'models'), glob(os.path.join('models', '*.[dae|stl]*'))),
         (os.path.join('share', package_name, 'meshes'), glob(os.path.join('meshes', '*.[dae|stl]*'))),
-        (os.path.join('share', package_name, 'px150_meshes'), glob(os.path.join('px150_meshes', '*.[dae|stl]*'))),
         # Include URDF (.urdf) files
         (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.urdf.xacro*'))),
         (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.gazebo.xacro*'))),
@@ -26,10 +24,7 @@ setup(
         # Include world (.sdf or dae) files
         (os.path.join('share', package_name, 'worlds'), glob(os.path.join('worlds', '*/*.[sd][da][fe]'), recursive=True)),
         (os.path.join('share', package_name, 'worlds'), glob(os.path.join('worlds', '*.sdf'))),
-        # Include config (.yaml) files
-        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.yaml'))),
-	# Include map (.yaml and .pgm) files
-        (os.path.join('share', package_name, 'maps'), glob(os.path.join('maps', '*.[yp][ag][m]'))),
+
 
     ],
     install_requires=['setuptools'],
