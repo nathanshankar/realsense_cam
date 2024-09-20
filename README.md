@@ -35,6 +35,7 @@ ros2 launch d435i_depth depth.launch.py
 ```
 
 The workspace contains the gazebo plugins and scripts and nothing has to be changed. To attach the camera to your robot add the following lines in your robot description:
+
 To add the d435i depth camera's urdf:
 ```xacro
 <xacro:include filename="$(find d435i_depth)/urdf/d435i_gz.urdf.xacro"/>
