@@ -1,10 +1,10 @@
-# ROS2 d435i depth camera with Ignition Gazebo
-URDF package for intel realsense d435i depth camera with gazebo plugin installation instructions
+# ROS2 d455 depth camera with Ignition Gazebo
+URDF package for intel realsense d455 depth camera with gazebo plugin installation instructions
 ![image](https://github.com/user-attachments/assets/86911cac-7df3-476e-be01-a371d55ac442)
 
 Clone this repository into your robot workspace:
 ```console
-git clone https://github.com/nathanshankar/d435i_depth.git
+git clone https://github.com/nathanshankar/d455_depth.git
 ```
 Install realsense libraries in your system:
 ```console
@@ -31,14 +31,14 @@ export GAZEBO_MODEL_PATH=~/ros2_ws/install/realsense2_description/share/realsens
 # Camera visualization
 To view the camera in rviz open your robot workspace build and source the workspace and run:
 ```console
-ros2 launch d435i_depth depth.launch.py
+ros2 launch d455_depth depth.launch.py
 ```
 
 The workspace contains the gazebo plugins and scripts and nothing has to be changed. To attach the camera to your robot add the following lines in your robot description:
 
-To add the d435i depth camera's urdf:
+To add the d455 depth camera's urdf:
 ```xacro
-<xacro:include filename="$(find d435i_depth)/urdf/d435i_gz.urdf.xacro"/>
+<xacro:include filename="$(find d455_depth)/urdf/d455_gz.urdf.xacro"/>
 ```
 
 Add a joint to your robot using:

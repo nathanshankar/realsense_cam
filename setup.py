@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'd435i_depth'
+package_name = 'd455_depth'
 
 setup(
     name=package_name,
