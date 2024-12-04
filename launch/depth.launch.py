@@ -11,7 +11,7 @@ def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
     pkg_name = 'realsense_cam'
-    file_subpath = 'urdf/d435i_gz.urdf.xacro'
+    file_subpath = 'urdf/d435i.urdf.xacro'
 
 
     # Use xacro to process the file
