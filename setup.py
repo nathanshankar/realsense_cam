@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'd455_depth'
+package_name = 'realsense_cam'
 
 setup(
     name=package_name,

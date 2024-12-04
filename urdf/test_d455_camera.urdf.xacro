@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="realsense2_camera" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:arg name="use_nominal_extrinsics" default="true"/>
-  <xacro:include filename="$(find d455_depth)/urdf/d455.urdf.xacro" />
+  <xacro:include filename="$(find realsense_cam)/urdf/d455.urdf.xacro" />
   
   <link name="base_link" />
   <xacro:sensor_d455 parent="base_link" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">
